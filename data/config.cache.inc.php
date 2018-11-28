@@ -3,7 +3,7 @@ $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,pope
 $cfg_disable_tags = 'php';
 $cfg_basehost = 'http://dev03.com';
 $cfg_cmspath = '';
-$cfg_cookie_encode = '3ENgI7W9mSrYNWpMtaWSFqsgUut5PTg';
+$cfg_cookie_encode = '7C0oucqomcwYlgrGOkUWQmBH9NtRY';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
@@ -154,4 +154,10 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
+$lxfs_dianhua = '<p>咨询热线</p>
+<p>123-000-0000</p>';
+$lxfs_qq = '<p>官方QQ</p>
+<p>123-000-0000</p>';
+$lxfs_sj = '<p>服务手机</p>
+<p>1230000000</p>';
 ?>

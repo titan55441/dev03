@@ -3,7 +3,7 @@ $cfg_disable_funs = 'phpinfo,eval,exec,passthru,shell_exec,system,proc_open,pope
 $cfg_disable_tags = 'php';
 $cfg_basehost = 'http://dev03.com';
 $cfg_cmspath = '';
-$cfg_cookie_encode = '7C0oucqomcwYlgrGOkUWQmBH9NtRY';
+$cfg_cookie_encode = '3ENgI7W9mSrYNWpMtaWSFqsgUut5PTg';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
@@ -103,7 +103,7 @@ $cfg_rewrite = 'N';
 $cfg_delete = 'Y';
 $cfg_keywords = '';
 $cfg_description = '';
-$cfg_beian = '';
+$cfg_beian = '987654321';
 $cfg_need_typeid2 = 'Y';
 $cfg_cache_type = 'id';
 $cfg_max_face = 50;
@@ -160,4 +160,5 @@ $lxfs_qq = '<p>官方QQ</p>
 <p>123-000-0000</p>';
 $lxfs_sj = '<p>服务手机</p>
 <p>1230000000</p>';
+$shouye_jj = '富宝贝生态农庄一个被原生态360°包围的绿色空间，远离都市的嘈杂，农庄融入大自然怀抱，是你在喧闹的工作中放松休闲的一片静土。<br>农庄内设采摘区、垂钓区、田园果蔬区、活动区、摸鱼区、烧烤野炊等多项目娱乐项目，特别还有充满特色的KTV蒙古包。<br>富宝贝是一日游、亲子活动，南通周边游的首选之地。空气清新宜人，绝对是一个放松心情的好地方。';
 ?>

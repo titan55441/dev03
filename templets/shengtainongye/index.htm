@@ -46,10 +46,10 @@
                     {/dede:channelartlist}
                     -->
                     {dede:channelartlist row='3' typeid='1,2,3'  currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
-                    <li class="">
+                    <li class="{dede:field.active/}">
                         <a href="{dede:field name='typeurl'/}">
                             <p class="nav_name">{dede:field name='typename'/}</p>
-                            <p class="nav_en">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
                             <span class="nav_dot"></span>
                         </a>
                     </li>
@@ -62,10 +62,10 @@
             <div class="right header_nav">
                 <ul class="header_nav_list clearfix">
                     {dede:channelartlist row='4' typeid='4,5,6,7'  currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
-                    <li class="">
+                    <li class="{dede:field.active/}">
                         <a href="{dede:field name='typeurl'/}">
                             <p class="nav_name">{dede:field name='typename'/}</p>
-                            <p class="nav_en">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
                             <span class="nav_dot"></span>
                         </a>
                     </li>
@@ -86,10 +86,10 @@
                         </a>
                     </li>
                     {dede:channelartlist row='3' typeid='1,2,3'  currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
-                    <li class="">
+                    <li class="{dede:field.active/}">
                         <a href="{dede:field name='typeurl'/}">
                             <p class="nav_name">{dede:field name='typename'/}</p>
-                            <p class="nav_en">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
                             <span class="nav_dot"></span>
                         </a>
                     </li>
@@ -102,10 +102,10 @@
             <div class="right header_nav">
                 <ul class="header_nav_list clearfix">
                     {dede:channelartlist row='4' typeid='4,5,6,7'  currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
-                    <li class="">
+                    <li class="{dede:field.active/}">
                         <a href="{dede:field name='typeurl'/}">
                             <p class="nav_name">{dede:field name='typename'/}</p>
-                            <p class="nav_en">{dede:field name='typename'/}</p>
+                            <p class="nav_en">{dede:field name='typenameen'/}</p>
                             <span class="nav_dot"></span>
                         </a>
                     </li>
@@ -154,8 +154,7 @@
         <div class="about">
                 <div class="about_top">
                     <h2 class="about_title wow fadeInUp" data-wow-delay="0.3s"></h2>
-                    <p class="about_dec wow fadeInUp"  data-wow-delay="0.5s">海南和民生态农业有限公司以基地化、品质化、标准化、品牌化的发展战略为指引，<br>
-                        目前，已发展成为一家集基地种植、加工包装、冷藏保鲜、批发配送等全产业链为一体的公司。</p>
+                    <p class="about_dec wow fadeInUp"  data-wow-delay="0.5s">{dede:global.shouye_jj/}</p>
                 </div>
                 <!--列表-->
                 <div class="about_list_box">
@@ -177,7 +176,7 @@
                             <a href="[field:typelink/]">
                                 <div class="about_list_pic">
                                     <div class="about_list_pic_in">
-                                        <img src="/templets/shengtainongye/static/picture/list1.png" alt="">
+                                        <img src="/templets/shengtainongye/static/picture/list[field:id/].png" alt="">
                                     </div>
                                 </div>
                                 <p class="about_list_name">[field:typename/]</p>
@@ -339,7 +338,7 @@
                                     <p class="base_name">和民生态农业园-苹果</p>
                                 </a>
                             </li>
-                            {dede:arclist            row='5'        typeid='2'     }
+                            {dede:arclist            row='5'        typeid='3'     }
                             <li class="base_list_item">
                                 <a href="javascript:;">
                                     <img src="[field:picname/]" alt="">
@@ -361,7 +360,7 @@
         <div class="news_show left wow fadeInLeft" data-wow-delay="0.5s">
             {dede:likearticle mytypeid='5' titlelen='60' row='1'}
             <a href="[field:arcurl/]">
-                <p class="news_show_time">[field:pubdate function="GetDateTimeMK(@me)" /]</p>
+                <p class="news_show_time">[field:pubdate function="MyDate('m-d',@me)"/]</p>
                 <h2 class="news_show_title">[field:title/]</h2>
                 <p class="news_show_dec">[field:description function="cn_substr(@me,80)"/]...</p>
                 <div class="news_show_pic">

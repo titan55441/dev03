@@ -91,6 +91,16 @@ function lib_channelartlist(&$ctag,&$refObj)
         $GLOBALS['itemindex']++;
         $pv = new PartView($typeids[$i]['id']);
         $pv->Fields['typeurl'] = GetOneTypeUrlA($typeids[$i]);
+        if($typeids[$i]['id'] == $refObj->TypeLink->TypeInfos['id'] ||
+          $typeids[$i]['id'] == $refObj->TypeLink->TypeInfos['topid']
+          //如果循环到的id为正在打开的栏目的祖父(最顶级)栏目,则循环到的祖父id也要高亮
+          ||$typeids[$i]['id']==$refObj->TypeLink->TypeInfos['reid']
+          //根据现在访问的栏目id的父栏目,即 $refObj->TypeLink->TypeInfos['reid'] ,如果reid等于本次循环得到的id ,则本次循环得到的栏目高亮
+          ){
+        $pv->Fields['active'] = $active ? $active : 'active';
+        }else{
+        $pv->Fields['active'] = '';
+        }
         $pv->SetTemplet($innertext,'string');
         $artlist .= $pv->GetResult();
         $GLOBALS['itemparity'] = ($GLOBALS['itemparity']==1 ? 2 : 1);

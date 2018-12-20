@@ -244,7 +244,7 @@ input[type="text"] {
 .about_wrap{
     padding:0.76rem 0 0.76rem;
     position: relative;
-    background: url("../images/bg.png") left 0.76rem  no-repeat;
+    background: url("../images/bg.png") center 0.76rem  no-repeat;
 }
 .about .about_top{
 
@@ -318,7 +318,7 @@ input[type="text"] {
 }
 
 .products_show{
-    background: #f8f8f8 url("../images/1.png") left top no-repeat;
+    background: #f8f8f8 url("../images/1.png") center top no-repeat;
     overflow: hidden;
 }
 .decorate_icon{
@@ -452,6 +452,7 @@ input[type="text"] {
 }
 .base_box{
     margin-top:1.3rem;
+    /*position: relative;*/
     position: relative;
 
 }
@@ -462,7 +463,8 @@ input[type="text"] {
     height:100%;
     left:0;
     bottom:0;
-    background: url("../images/bg.png") left bottom no-repeat;
+    background: url("../images/bg.png") center bottom no-repeat;
+    /*background: url("../images/bg.png") left bottom no-repeat;*/
     -webkit-background-size: contain;
     background-size: contain;
 }
@@ -569,6 +571,7 @@ input[type="text"] {
 .news_box{
     padding:0.8rem 0 1.56rem 0;
     margin-top:0.78rem;
+    /*position: relative;*/
     position: relative;
     background-color: #000;
     z-index:1;
@@ -584,7 +587,8 @@ input[type="text"] {
     bottom:0;
     width:100%;
     height:100%;
-    background: url("../images/bg2.png") no-repeat;
+    background: url("../images/bg2.png") center no-repeat;
+    /*background: url("../images/bg2.png") no-repeat;*/
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.5);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0.5);
     opacity: 0.5;
@@ -1388,6 +1392,15 @@ input[type="text"] {
     position: relative;
     padding:1.5rem 0 0 0;
 }
+/*.company:before{*/
+    /*content: '';*/
+    /*width:9.74rem;*/
+    /*height:4.77rem;*/
+    /*position: absolute;*/
+    /*right:0;*/
+    /*bottom:-0.2rem;*/
+    /*background: url("../images/yj_bg2.png") center top no-repeat;*/
+/*}*/
 .company:before{
     content: '';
     width:9.74rem;
@@ -1395,7 +1408,7 @@ input[type="text"] {
     position: absolute;
     right:0;
     bottom:-0.2rem;
-    background: url("../images/yj_bg2.png")  no-repeat;
+    background: url("../images/yj_bg2.png") center center no-repeat;
 }
 .company .company_bg{
     position: absolute;

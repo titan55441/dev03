@@ -34,10 +34,15 @@ $z[7][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thiscla
 $z[8]=Array("global","",4492,4519);
 $z[8][4]=array();
 $z[8][4]['name']="cfg_indexurl";
-$z[9]=Array("channel","\r\n                <li>\r\n                    <a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a>\r\n                </li>\r\n                ",4578,4901);
+$z[9]=Array("channelartlist","\r\n                <li class=\"{dede:field.active/}\">\r\n                    <a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a>\r\n                </li>\r\n                ",4578,4952);
 $z[9][4]=array();
 $z[9][4]['row']="7";
-$z[9][4]['type']="top";
+$z[9][4]['typeid']="1,2,3,4,5,6,7";
 $z[9][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
+$z[10]=Array("channel","-->\r\n                <!--<li>-->\r\n                    <!--<a href=\"[field:typelink/]\">[field:typename/]</a>-->\r\n                <!--</li>-->\r\n                <!--",4974,5303);
+$z[10][4]=array();
+$z[10][4]['type']="top";
+$z[10][4]['row']="8";
+$z[10][4]['currentstyle']="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>";
 
 ?>

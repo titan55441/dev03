@@ -88,11 +88,16 @@
                 <li>
                     <a href="{dede:global.cfg_indexurl/}">网站首页</a>
                 </li>
-                {dede:channel        row='7'        type ='top'     currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>"     }
-                <li>
+                {dede:channelartlist        row='7'        typeid ='1,2,3,4,5,6,7'     currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>" }
+                <li class="{dede:field.active/}">
                     <a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
                 </li>
-                {/dede:channel}
+                {/dede:channelartlist}
+                <!--{dede:channel        type ='top'        row='8'    currentstyle="<li class='active'><a href='~typelink~' class='thisclass'>~typename~</a> </li>"       }-->
+                <!--<li>-->
+                    <!--<a href="[field:typelink/]">[field:typename/]</a>-->
+                <!--</li>-->
+                <!--{/dede:channel}-->
             </ul>
         </div>
     </div>

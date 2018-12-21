@@ -297,7 +297,7 @@ CREATE TABLE `dede_arctype` (
   `crossid` text,
   `content` text,
   `smalltypes` text,
-  `typenameen` char(40) DEFAULT NULL,
+  `typenameen` char(40) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `reid` (`reid`,`isdefault`,`channeltype`,`ispart`,`corank`,`topid`,`ishidden`),
   KEY `sortrank` (`sortrank`)

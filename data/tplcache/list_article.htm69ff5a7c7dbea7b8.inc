@@ -34,7 +34,7 @@ $z[10][4]=array();
 $z[10][4]['name']="typename";
 $z[11]=Array("channel","\r\n                    <a href=\"[field:typelink/]\">[field:typename/]</a>\r\n                    ",1588,1797);
 $z[11][4]=array();
-$z[11][4]['row']="3";
+$z[11][4]['row']="4";
 $z[11][4]['type']="son";
 $z[11][4]['currentstyle']="<a href='~typelink~' class='active'>~typename~</a>";
 $z[12]=Array("global","",2297,2329);

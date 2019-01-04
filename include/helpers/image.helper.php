@@ -168,7 +168,7 @@ if ( ! function_exists('WaterImg'))
         if( isset($GLOBALS['needwatermark']) )
         {
             $photo_markup = $photo_markdown = empty($GLOBALS['needwatermark']) ? '0' : '1';
-        }
+        }else { $photo_markup=$photo_markdown='0'; }
         if($photo_markup != '1' || ($fromGo=='collect' && $photo_markdown!='1') )
         {
             return;

@@ -1,7 +1,7 @@
 <?php
 $cfg_basehost = 'http://dev04.com';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'Kikynpe1iPsbPbt0InWgItgHAtGPxa';
+$cfg_cookie_encode = 'xiK6kWGNyd1mOggnmDOHCHKc05SG';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
